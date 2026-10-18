@@ -45,7 +45,9 @@ jobs:
           pip install -r requirements.txt
       - name: Render wallpaper
         if: steps.timing.outputs.run == 'true'
-        run: python generate.py
+        run: |
+          python -m unittest
+          python generate.py
       - uses: actions/configure-pages@v5
         if: steps.timing.outputs.run == 'true'
       - uses: actions/upload-pages-artifact@v3
