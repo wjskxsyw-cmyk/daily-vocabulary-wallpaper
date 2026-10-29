@@ -1,11 +1,19 @@
-name: Daily bilingual wallpaper
+name: Daily Insight wallpaper
 
 on:
   schedule:
-    # Europe/Belgrade midnight occurs at 22:00 UTC (summer) or 23:00 UTC (winter).
-    - cron: "5 22 * * *"
-    - cron: "5 23 * * *"
+    # Both sides of local midnight, plus a recovery run. No fragile hour gate.
+    - cron: '17 22,23,3 * * *'
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'generate.py'
+      - 'test_generate.py'
+      - 'verify_public.py'
+      - 'data/insights.json'
+      - 'requirements.txt'
+      - '.github/workflows/daily-wallpaper.yml'
 
 permissions:
   contents: read
@@ -19,41 +27,30 @@ concurrency:
 jobs:
   generate:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      - name: Check Belgrade local time for scheduled runs
-        id: timing
-        env:
-          EVENT_NAME: ${{ github.event_name }}
-        run: |
-          LOCAL_HOUR=$(TZ=Europe/Belgrade date +%H)
-          if [[ "$EVENT_NAME" == "workflow_dispatch" || "$LOCAL_HOUR" == "00" ]]; then
-            echo "run=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "run=false" >> "$GITHUB_OUTPUT"
-          fi
       - uses: actions/setup-python@v5
-        if: steps.timing.outputs.run == 'true'
         with:
           python-version: '3.12'
           cache: pip
       - name: Install fonts and dependencies
-        if: steps.timing.outputs.run == 'true'
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y fonts-noto-cjk fonts-dejavu-core
-          pip install -r requirements.txt
-      - name: Render wallpaper
-        if: steps.timing.outputs.run == 'true'
+          python -m pip install -r requirements.txt
+      - name: Validate every insight and palette, then render today
         run: |
           python -m unittest
           python generate.py
       - uses: actions/configure-pages@v5
-        if: steps.timing.outputs.run == 'true'
       - uses: actions/upload-pages-artifact@v3
-        if: steps.timing.outputs.run == 'true'
         with:
           path: public
       - uses: actions/deploy-pages@v4
-        if: steps.timing.outputs.run == 'true'
         id: deployment
+      - name: Verify public date, content ID and exact PNG hash
+        run: python verify_public.py
