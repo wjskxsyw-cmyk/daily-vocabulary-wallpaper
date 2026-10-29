@@ -1,0 +1,546 @@
+[
+  {
+    "id": "insight-001",
+    "title": "先做无法规模化的事",
+    "english": "Early growth often starts with founders recruiting users one by one.",
+    "explanation": "早期的手工服务不是效率失败，而是发现真实需求的入口。先学会让一个人满意，再谈复制。",
+    "example": "先陪三位客户完成首次使用，比先搭自动获客系统更能发现障碍。",
+    "action": "今天亲自帮一位用户完成关键步骤。",
+    "source": {
+      "author": "Paul Graham",
+      "title": "Do Things that Don't Scale",
+      "published": "2013-07",
+      "url": "https://www.paulgraham.com/ds.html",
+      "verified_on": "2026-10-29"
+    },
+    "english_kind": "faithful paraphrase",
+    "example_kind": "editorial illustration"
+  },
+  {
+    "id": "insight-002",
+    "title": "半小时会议可能花掉半天",
+    "english": "A short meeting can cost a maker an entire productive afternoon.",
+    "explanation": "深度工作依赖连续时间。会议切碎下午后，剩余空档可能都不足以启动难题。",
+    "example": "两点半的会议，让写作者前后都只有零散时间，整章迟迟没写。",
+    "action": "把明天的会议集中到同一时段。",
+    "source": {
+      "author": "Paul Graham",
+      "title": "Maker’s Schedule, Manager’s Schedule",
+      "published": "2009-07",
+      "url": "https://www.paulgraham.com/makersschedule.html",
+      "verified_on": "2026-10-29"
+    },
+    "english_kind": "faithful paraphrase",
+    "example_kind": "editorial illustration"
+  },
+  {
+    "id": "insight-003",
+    "title": "观点绑上身份就更难改",
+    "english": "When a belief becomes part of your identity, examining it gets harder.",
+    "explanation": "被质疑的不再只是判断，而像是整个人。少给自己贴标签，才有空间跟随证据改变。",
+    "example": "把自己定义为某品牌忠粉后，连承认它的产品有缺点都变难。",
+    "action": "将一句“我是某派”改成“目前证据支持”。",
+    "source": {
+      "author": "Paul Graham",
+      "title": "Keep Your Identity Small",
+      "published": "2009-02",
+      "url": "https://www.paulgraham.com/identity.html",
+      "verified_on": "2026-10-29"
+    },
+    "english_kind": "faithful paraphrase",
+    "example_kind": "editorial illustration"
+  },
+  {
+    "id": "insight-004",
+    "title": "高分可能训练出错误习惯",
+    "english": "Learning to win hackable tests can distract you from doing useful work.",
+    "explanation": "当奖励取决于评分规则，人会优化被看见的表现。进入现实后，讨好评委未必创造价值。",
+    "example": "汇报做得漂亮，却没有客户愿意持续使用产品。",
+    "action": "给当前目标加一项真实使用效果指标。",
+    "source": {
+      "author": "Paul Graham",
+      "title": "The Lesson to Unlearn",
+      "published": "2019-12",
+      "url": "https://www.paulgraham.com/lesson.html",
+      "verified_on": "2026-10-29"
+    },
+    "english_kind": "faithful paraphrase",
+    "example_kind": "editorial illustration"
+  },
+  {
+    "id": "insight-005",
+    "title": "忙碌也能是一种拖延",
+    "english": "Doing many small tasks can be a way to avoid the important one.",
+    "explanation": "清空待办带来即时满足，也能掩盖对难题的回避。衡量进展时，要看最重要的事。",
+    "example": "整理文件、回邮件一上午，却没有开始最难的那页提案。",
+    "action": "先给最重要的难题留出四十五分钟。",
+    "source": {
+      "author": "Paul Graham",
+      "title": "Good and Bad Procrastination",
+      "published": "2005-12",
+      "url": "https://www.paulgraham.com/procrastination.html",
+      "verified_on": "2026-10-29"
+    },
+    "english_kind": "faithful paraphrase",
+    "example_kind": "editorial illustration"
+  },
+  {
+    "id": "insight-006",
+    "title": "把想法写成问题",
+    "english": "An initial idea is a question to explore, not a blueprint to defend.",
+    "explanation": "创业起点不必完全正确。把断言改成可验证的问题，错误也能指向更好的方向。",
+    "example": "“我要做学习软件”改成“学生愿意每天用它复习吗？”",
+    "action": "为一个想法设计一次能推翻它的小实验。",
+    "source": {
+      "author": "Paul Graham",
+      "title": "Ideas for Startups",
+      "published": "2005-10",
+      "url": "https://www.paulgraham.com/ideas.html",
+      "verified_on": "2026-10-29"
+    },
+    "english_kind": "faithful paraphrase",
+    "example_kind": "editorial illustration"
+  },
+  {
+    "id": "insight-007",
+    "title": "少数人的迫切胜过多数的客气",
+    "english": "A few people needing a product intensely can matter more than broad mild interest.",
+    "explanation": "初期需求要看强度。人人说有意思，却没人愿意现在使用，仍可能意味着没有需求。",
+    "example": "十人每天依赖的小工具，比千人点赞却从不打开的产品更有线索。",
+    "action": "问一位潜在用户：你今天怎样解决它？",
+    "source": {
+      "author": "Paul Graham",
+      "title": "How to Get Startup Ideas",
+      "published": "2012-11",
+      "url": "https://www.paulgraham.com/startupideas.html",
+      "verified_on": "2026-10-29"
+    },
+    "english_kind": "faithful paraphrase",
+    "example_kind": "editorial illustration"
+  },
+  {
+    "id": "insight-008",
+    "title": "共识也有看不见的时尚",
+    "english": "Our era may have mistaken beliefs that feel as natural as past fashions did.",
+    "explanation": "身处一种观念环境时，很难察觉它的边界。广泛接受是社会事实，未必就是正确的证据。",
+    "example": "回看过去笃定却已放弃的管理惯例，才发现常识也会变。",
+    "action": "找出一个共识，分别写下证据与惯例。",
+    "source": {
+      "author": "Paul Graham",
+      "title": "What You Can’t Say",
+      "published": "2004-01",
+      "url": "https://www.paulgraham.com/say.html",
+      "verified_on": "2026-10-29"
+    },
+    "english_kind": "faithful paraphrase",
+    "example_kind": "editorial illustration"
+  },
+  {
+    "id": "insight-009",
+    "title": "选择太多时更要拒绝",
+    "english": "When already overcommitted, saying no protects room for rare compelling work.",
+    "explanation": "这条建议针对已经过载的人。勉强答应的机会，会挤走真正愿意全力投入的事情。",
+    "example": "接下三个可有可无的副业后，最想做的作品反而没有时间。",
+    "action": "拒绝一件非必要又不想投入的新承诺。",
+    "source": {
+      "author": "Derek Sivers",
+      "title": "No yes. Either HELL YEAH! or no.",
+      "published": "2009-08-26",
+      "url": "https://sive.rs/hellyeah",
+      "verified_on": "2026-10-29"
+    },
+    "english_kind": "faithful paraphrase",
+    "example_kind": "editorial illustration"
+  },
+  {
+    "id": "insight-010",
+    "title": "保密不能替代落地",
+    "english": "An idea gains practical value through execution, not merely through being protected.",
+    "explanation": "Sivers 用乘法作比喻：好构想需要执行才能放大。文中金额是说明方式，不是估值公式。",
+    "example": "保密半年仍只有一页构想，不如做出一个可试用的版本。",
+    "action": "今天交付一个别人能实际体验的小成果。",
+    "source": {
+      "author": "Derek Sivers",
+      "title": "Ideas are just a multiplier of execution",
+      "published": "2005-08-16",
+      "url": "https://sive.rs/multiply",
+      "verified_on": "2026-10-29"
+    },
+    "english_kind": "faithful paraphrase",
+    "example_kind": "editorial illustration"
+  },
+  {
+    "id": "insight-011",
+    "title": "第一个跟随者也在领导",
+    "english": "The first follower helps turn a solitary act into a movement.",
+    "explanation": "追随并非总是被动。第一个公开加入的人，示范参与方式，也降低后来者加入的风险。",
+    "example": "团队里第一个认真使用新流程的人，让其他人看见如何开始。",
+    "action": "公开支持一个值得参与的具体行动。",
+    "source": {
+      "author": "Derek Sivers",
+      "title": "First Follower",
+      "published": "2010-02-11",
+      "url": "https://sive.rs/ff",
+      "verified_on": "2026-10-29"
+    },
+    "english_kind": "faithful paraphrase",
+    "example_kind": "editorial illustration"
+  },
+  {
+    "id": "insight-012",
+    "title": "你觉得普通，别人未必知道",
+    "english": "An idea that feels obvious to its creator may still surprise other people.",
+    "explanation": "熟悉会让自己的经验失去新鲜感。仅凭自己是否惊艳，难以判断它对别人的价值。",
+    "example": "你习惯的记账步骤，可能正好解决朋友长期困扰的问题。",
+    "action": "分享一条你觉得太基础却亲测有效的经验。",
+    "source": {
+      "author": "Derek Sivers",
+      "title": "Obvious to you. Amazing to others.",
+      "published": "2010-11-21",
+      "url": "https://sive.rs/obvious",
+      "verified_on": "2026-10-29"
+    },
+    "english_kind": "faithful paraphrase",
+    "example_kind": "editorial illustration"
+  },
+  {
+    "id": "insight-013",
+    "title": "更累不一定快多少",
+    "english": "In Sivers’s cycling story, far more strain saved only about two minutes.",
+    "explanation": "他写自己全力骑行四十三分钟，轻松骑行四十五分钟。这是个人经历，不是普遍运动定律。",
+    "example": "一份普通报告反复润色到深夜，可能只比清晰初稿多一点收益。",
+    "action": "试一次放松节奏，比较成果与耗时。",
+    "source": {
+      "author": "Derek Sivers",
+      "title": "Relax for the same result",
+      "published": "2015-10-02",
+      "url": "https://sive.rs/relax",
+      "verified_on": "2026-10-29"
+    },
+    "english_kind": "faithful paraphrase",
+    "example_kind": "editorial illustration"
+  },
+  {
+    "id": "insight-014",
+    "title": "公开当下重点能帮你拒绝",
+    "english": "A public account of current priorities can help you turn down distractions.",
+    "explanation": "写清此刻在做什么，也是在定义暂时不做什么。重点从心里的偏好变成可说明的承诺。",
+    "example": "列出本月只推进的两个项目，面对新邀约时就有明确依据。",
+    "action": "写三行本月重点，并标上更新日期。",
+    "source": {
+      "author": "Derek Sivers",
+      "title": "How and why to make a /now page",
+      "published": "2024-05-18",
+      "url": "https://sive.rs/now2",
+      "verified_on": "2026-10-29"
+    },
+    "english_kind": "faithful paraphrase",
+    "example_kind": "editorial illustration"
+  },
+  {
+    "id": "insight-015",
+    "title": "攻击语气没有驳倒观点",
+    "english": "Criticizing a writer’s tone does not establish that the argument is false.",
+    "explanation": "令人不快的表达可能仍然正确。判断内容时，需把措辞造成的不适与证据缺陷分开。",
+    "example": "同事说话强硬，不代表他指出的成本超支不存在。",
+    "action": "下一次反驳时，先准确复述对方主张。",
+    "source": {
+      "author": "Paul Graham",
+      "title": "How to Disagree",
+      "published": "2008-03",
+      "url": "https://www.paulgraham.com/disagree.html",
+      "verified_on": "2026-10-29"
+    },
+    "english_kind": "faithful paraphrase",
+    "example_kind": "editorial illustration"
+  },
+  {
+    "id": "insight-016",
+    "title": "代写省下的也可能是思考",
+    "english": "Outsourcing writing may also remove a chance to practice thinking clearly.",
+    "explanation": "Graham 认为写作迫使想法变清楚。工具能省力，但把所有表达外包，也会减少训练机会。",
+    "example": "自动生成方案很流畅，自己却说不清最关键的取舍依据。",
+    "action": "请工具改写前，先独立写清三句理由。",
+    "source": {
+      "author": "Paul Graham",
+      "title": "Writes and Write-Nots",
+      "published": "2024-10",
+      "url": "https://www.paulgraham.com/writes.html",
+      "verified_on": "2026-10-29"
+    },
+    "english_kind": "faithful paraphrase",
+    "example_kind": "editorial illustration"
+  },
+  {
+    "id": "insight-017",
+    "title": "小团队能提供大公司的奢侈",
+    "english": "Being small can let you offer personal attention that large companies cannot.",
+    "explanation": "规模带来效率，也限制个别照顾。早期团队可以把人数少转化为体验优势，而非只看作弱点。",
+    "example": "只服务五位客户时，你能逐个了解卡点并当天回应。",
+    "action": "为一位早期用户做一件超出预期的小事。",
+    "source": {
+      "author": "Paul Graham",
+      "title": "Do Things that Don't Scale",
+      "published": "2013-07",
+      "url": "https://www.paulgraham.com/ds.html",
+      "verified_on": "2026-10-29"
+    },
+    "english_kind": "faithful paraphrase",
+    "example_kind": "editorial illustration"
+  },
+  {
+    "id": "insight-018",
+    "title": "还没开会，注意力已被占走",
+    "english": "Anticipating an interruption can make ambitious work harder to start.",
+    "explanation": "会议成本可能提前发生。知道下午会被切断，人就更容易选择小事，放弃启动困难工作。",
+    "example": "上午想着稍后的预约，反复看时间，始终没打开要写的文档。",
+    "action": "保护一整块无预约的时间来启动难题。",
+    "source": {
+      "author": "Paul Graham",
+      "title": "Maker’s Schedule, Manager’s Schedule",
+      "published": "2009-07",
+      "url": "https://www.paulgraham.com/makersschedule.html",
+      "verified_on": "2026-10-29"
+    },
+    "english_kind": "faithful paraphrase",
+    "example_kind": "editorial illustration"
+  },
+  {
+    "id": "insight-019",
+    "title": "争论激烈不代表问题无解",
+    "english": "An identity-driven dispute does not prove the underlying question has no answer.",
+    "explanation": "当参与者忙着保卫立场，讨论失效；不能因此断定所有答案等价。换一种参与方式可能更有用。",
+    "example": "两派拥护者吵工具好坏，却没人比较同一任务的实际结果。",
+    "action": "先约定评价标准，再讨论各自偏好。",
+    "source": {
+      "author": "Paul Graham",
+      "title": "Keep Your Identity Small",
+      "published": "2009-02",
+      "url": "https://www.paulgraham.com/identity.html",
+      "verified_on": "2026-10-29"
+    },
+    "english_kind": "faithful paraphrase",
+    "example_kind": "editorial illustration"
+  },
+  {
+    "id": "insight-020",
+    "title": "讨好投资人可能也在骗自己",
+    "english": "Making a company genuinely useful matters more than learning tricks to impress investors.",
+    "explanation": "创始人也把自己的时间投进公司。若只优化融资表演，受损的并不只有被说服的投资者。",
+    "example": "演示数据漂亮，用户却一周后全部离开，融资不能修复需求。",
+    "action": "把一次包装工作换成一次用户留存检查。",
+    "source": {
+      "author": "Paul Graham",
+      "title": "The Lesson to Unlearn",
+      "published": "2019-12",
+      "url": "https://www.paulgraham.com/lesson.html",
+      "verified_on": "2026-10-29"
+    },
+    "english_kind": "faithful paraphrase",
+    "example_kind": "editorial illustration"
+  },
+  {
+    "id": "insight-021",
+    "title": "重要工作需要被允许拖延小事",
+    "english": "Postponing lesser tasks can preserve the time needed for meaningful work.",
+    "explanation": "所有行动都放弃了别的事。关键不在是否拖延，而在被保住的事情是否更值得；责任仍需安排。",
+    "example": "把非紧急整理留到周末，今天连续完成困难的第一稿。",
+    "action": "延后一个低价值任务，写下明确补做时间。",
+    "source": {
+      "author": "Paul Graham",
+      "title": "Good and Bad Procrastination",
+      "published": "2005-12",
+      "url": "https://www.paulgraham.com/procrastination.html",
+      "verified_on": "2026-10-29"
+    },
+    "english_kind": "faithful paraphrase",
+    "example_kind": "editorial illustration"
+  },
+  {
+    "id": "insight-022",
+    "title": "交流不是想好以后才开始",
+    "english": "Ideas can develop through explaining them to the right people.",
+    "explanation": "表达会暴露跳步，回应会提供阻力。讨论不只是展示成品，也能成为形成想法的过程。",
+    "example": "给朋友解释方案时卡住，才发现自己没说清谁真正需要它。",
+    "action": "向一位愿意追问的人讲一个未成熟想法。",
+    "source": {
+      "author": "Paul Graham",
+      "title": "Ideas for Startups",
+      "published": "2005-10",
+      "url": "https://www.paulgraham.com/ideas.html",
+      "verified_on": "2026-10-29"
+    },
+    "english_kind": "faithful paraphrase",
+    "example_kind": "editorial illustration"
+  },
+  {
+    "id": "insight-023",
+    "title": "先确认问题存在，再解题",
+    "english": "Solving a problem you actually have helps guard against imaginary demand.",
+    "explanation": "看似合理的市场故事容易自我强化。真实使用中的麻烦，往往比抽象人群规模更有价值。",
+    "example": "“很多人养宠物”不等于他们急需另一个宠物社交网站。",
+    "action": "记录今天一个反复出现的真实麻烦。",
+    "source": {
+      "author": "Paul Graham",
+      "title": "How to Get Startup Ideas",
+      "published": "2012-11",
+      "url": "https://www.paulgraham.com/startupideas.html",
+      "verified_on": "2026-10-29"
+    },
+    "english_kind": "faithful paraphrase",
+    "example_kind": "editorial illustration"
+  },
+  {
+    "id": "insight-024",
+    "title": "冒犯性不能证明真假",
+    "english": "A socially uncomfortable idea still needs to be examined for truth.",
+    "explanation": "Graham 寻找的是可能为真的禁忌想法，而非单纯挑衅。被反对不是证伪，也不是正确的保证。",
+    "example": "一个流程建议让资深同事不快，仍要靠试验结果判断是否有效。",
+    "action": "为一个不受欢迎的想法设计可检验预测。",
+    "source": {
+      "author": "Paul Graham",
+      "title": "What You Can’t Say",
+      "published": "2004-01",
+      "url": "https://www.paulgraham.com/say.html",
+      "verified_on": "2026-10-29"
+    },
+    "english_kind": "faithful paraphrase",
+    "example_kind": "editorial illustration"
+  },
+  {
+    "id": "insight-025",
+    "title": "答应的隐形成本是失去空位",
+    "english": "Saying yes to too much leaves little capacity for the work you most want.",
+    "explanation": "机会的成本不只在占用几小时，还在消耗为少数重点全力投入的余地。适用于可选择的承诺。",
+    "example": "每晚都有普通邀约，真正想参加的课程出现时却排不开。",
+    "action": "在日历保留一个不预先承诺的晚上。",
+    "source": {
+      "author": "Derek Sivers",
+      "title": "No yes. Either HELL YEAH! or no.",
+      "published": "2009-08-26",
+      "url": "https://sive.rs/hellyeah",
+      "verified_on": "2026-10-29"
+    },
+    "english_kind": "faithful paraphrase",
+    "example_kind": "editorial illustration"
+  },
+  {
+    "id": "insight-026",
+    "title": "好点子也需要执行质量",
+    "english": "In Sivers’s metaphor, execution and idea quality multiply rather than substitute.",
+    "explanation": "执行不是盲目加班。乘法的启发是同时关心方向与落实；一个维度的口号不能补齐另一个。",
+    "example": "好的课程构想，如果报名、教学和反馈都混乱，仍难帮助学生。",
+    "action": "选一处交付环节，今天把它真正做顺。",
+    "source": {
+      "author": "Derek Sivers",
+      "title": "Ideas are just a multiplier of execution",
+      "published": "2005-08-16",
+      "url": "https://sive.rs/multiply",
+      "verified_on": "2026-10-29"
+    },
+    "english_kind": "faithful paraphrase",
+    "example_kind": "editorial illustration"
+  },
+  {
+    "id": "insight-027",
+    "title": "让别人看见如何加入",
+    "english": "A movement grows when newcomers can see ordinary followers participating.",
+    "explanation": "人未必知道怎样模仿发起者，却能模仿与自己相似的参与者。展示加入路径比只赞美领袖更实用。",
+    "example": "社群只展示创始人的成果，新人却看不到首次参与该做什么。",
+    "action": "给新人展示一个最简单的参与示例。",
+    "source": {
+      "author": "Derek Sivers",
+      "title": "First Follower",
+      "published": "2010-02-11",
+      "url": "https://sive.rs/ff",
+      "verified_on": "2026-10-29"
+    },
+    "english_kind": "faithful paraphrase",
+    "example_kind": "editorial illustration"
+  },
+  {
+    "id": "insight-028",
+    "title": "熟练会扭曲你的价值判断",
+    "english": "Creators can underestimate their work because their own perspective feels ordinary.",
+    "explanation": "对你自然的表达来自你的经历。熟悉感会压低自评；先让真实受众反馈，才知道是否有帮助。",
+    "example": "做了多年饭的人，觉得新手需要的备菜顺序太简单而不愿教。",
+    "action": "把一个小作品交给一位真实受众试用。",
+    "source": {
+      "author": "Derek Sivers",
+      "title": "Obvious to you. Amazing to others.",
+      "published": "2010-11-21",
+      "url": "https://sive.rs/obvious",
+      "verified_on": "2026-10-29"
+    },
+    "english_kind": "faithful paraphrase",
+    "example_kind": "editorial illustration"
+  },
+  {
+    "id": "insight-029",
+    "title": "紧张感不等于有效用力",
+    "english": "Some of the strain we call effort may be unnecessary stress.",
+    "explanation": "Sivers 从骑行反思自己的工作节奏。可借来提出实验，不能据此保证所有任务减力都无损。",
+    "example": "写邮件时不停担心评价，耗掉的精力不一定让内容更清楚。",
+    "action": "做一项低风险任务时减少催逼，再看质量。",
+    "source": {
+      "author": "Derek Sivers",
+      "title": "Relax for the same result",
+      "published": "2015-10-02",
+      "url": "https://sive.rs/relax",
+      "verified_on": "2026-10-29"
+    },
+    "english_kind": "faithful paraphrase",
+    "example_kind": "editorial illustration"
+  },
+  {
+    "id": "insight-030",
+    "title": "个人介绍也有保质期",
+    "english": "A current-priorities page needs an update date to remain useful.",
+    "explanation": "静态履历讲你曾是谁，当前重点讲你正把时间花在哪里。日期让读者判断信息是否仍适用。",
+    "example": "个人主页还写旧项目，新的合作邀约便持续偏离当前方向。",
+    "action": "更新一次个人介绍，写清当前关注与日期。",
+    "source": {
+      "author": "Derek Sivers",
+      "title": "How and why to make a /now page",
+      "published": "2024-05-18",
+      "url": "https://sive.rs/now2",
+      "verified_on": "2026-10-29"
+    },
+    "english_kind": "faithful paraphrase",
+    "example_kind": "editorial illustration"
+  },
+  {
+    "id": "insight-031",
+    "title": "挑出小错不等于推翻核心",
+    "english": "Refuting a minor detail may leave the central argument untouched.",
+    "explanation": "反驳的力度取决于它是否击中结论依赖的关键理由。抓住拼写问题，可能只是制造胜利感。",
+    "example": "报告有个错别字，并不能说明需求下降的证据是假的。",
+    "action": "找出对方结论最依赖的前提再评估。",
+    "source": {
+      "author": "Paul Graham",
+      "title": "How to Disagree",
+      "published": "2008-03",
+      "url": "https://www.paulgraham.com/disagree.html",
+      "verified_on": "2026-10-29"
+    },
+    "english_kind": "faithful paraphrase",
+    "example_kind": "editorial illustration"
+  },
+  {
+    "id": "insight-032",
+    "title": "便利之后，能力需要主动保养",
+    "english": "When a tool removes a task’s necessity, preserving the skill can require deliberate practice.",
+    "explanation": "Graham 把写作比作现代人的体能：工作不再自动提供训练，想保留能力就得主动练习。",
+    "example": "平时全用自动摘要，临时要独立解释复杂问题时才发现组织困难。",
+    "action": "今天关掉辅助工具，独立写两百字说明。",
+    "source": {
+      "author": "Paul Graham",
+      "title": "Writes and Write-Nots",
+      "published": "2024-10",
+      "url": "https://www.paulgraham.com/writes.html",
+      "verified_on": "2026-10-29"
+    },
+    "english_kind": "faithful paraphrase",
+    "example_kind": "editorial illustration"
+  }
+]
