@@ -26,7 +26,7 @@ https://wjskxsyw-cmyk.github.io/daily-vocabulary-wallpaper/latest.png
 
 Pages → Source 使用 **GitHub Actions**。工作流 `.github/workflows/daily-wallpaper.yml` 上传 `public/`，所以根路径始终为 `latest.png`，网页为 `/`，元数据为 `latest.json`。
 
-每日 UTC 22:17、23:17、03:17 运行；按原有 `Europe/Belgrade` 日历取当天内容（与华沙当前规则相同）。双午夜触发兼容夏令时，03:17 为补跑；不再因延迟跨出零点时段而跳过。代码/内容变更及手动 `Run workflow` 也触发。补跑可能重复发布同一天，但不会抽到另一条。
+每日 UTC 21:17 **提前发布次日壁纸**（贝尔格莱德/华沙冬季 22:17、夏季 23:17），让现有午夜后执行的 Shortcut 有时间取得新图；UTC 03:17、09:17 按 `Europe/Belgrade` 当地当天补跑。前晚发布至午夜之间，公开图片会标注次日日期，这是预发布设计。若晚间任务延迟跨过 UTC 午夜，则生成当天，不跳到后天。代码/内容变更及手动 `Run workflow` 始终生成当地当天。补跑不会抽到同一天的另一条。
 
 GitHub 定时可能延迟或漏跑，公开仓库的定时任务也可能在长期无活动后被 GitHub 停用，不能保证手机 00:20 下载时当天图片已发布。原 Shortcut 不变；CDN/iPhone 缓存仍可能短暂保留旧图。原有带日期查询参数的 URL 可继续使用。
 
