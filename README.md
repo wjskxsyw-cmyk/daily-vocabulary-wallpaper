@@ -1,47 +1,39 @@
-# Daily Vocabulary Wallpaper
+# Daily Insight 锁屏壁纸
 
-每天自动生成英语＋塞语 iPhone 锁屏壁纸。每天按固定顺序轮换八种极简配色：暖象牙白、森林绿、勃艮第红、石墨灰、薰衣草紫、摩卡、灰玫瑰、石板蓝。顶部 40% 和底部 15% 留白给系统时钟、组件和锁屏按钮。配色从 2026-10-17 的暖象牙白开始，每八天循环；与现有 30 组词汇的循环独立。
+每天从已核实来源的精选内容库生成一张 Daily Insight。固定图片地址保持不变：
 
-## 初次部署
+https://wjskxsyw-cmyk.github.io/daily-vocabulary-wallpaper/latest.png
 
-1. 把本 ZIP **解压后** 的所有内容上传到 GitHub 仓库根目录。注意 `.github/workflows/daily-wallpaper.yml` 的目录结构必须保留。
-2. 仓库 Settings → Pages → Build and deployment → Source 选 **GitHub Actions**。
-3. 仓库 Actions → `Daily bilingual wallpaper` → `Run workflow` → 运行一次。
-4. 等待绿色成功标记后打开：
-   - 页面：`https://wjskxsyw-cmyk.github.io/daily-vocabulary-wallpaper/`
-   - 固定图片：`https://wjskxsyw-cmyk.github.io/daily-vocabulary-wallpaper/latest.png`
-   - 日期信息：`https://wjskxsyw-cmyk.github.io/daily-vocabulary-wallpaper/latest.json`
+现有 iPhone Shortcut 无需修改。生成器不再读取 `data/words.json`；该旧词库仅作历史保留。
 
-## iPhone 快捷指令（锁屏自动更换）
+## 内容与来源
 
-在 iPhone「快捷指令」新建快捷指令：
+`data/insights.json` 包含 **32 条洞察，来自 16 篇作者本人发布的博客文章**（Paul Graham、Derek Sivers），于 2026-10-29 逐篇核对。各条包含标题、英文忠实意译、中文解释、自拟具体情境、编辑整理的行动建议，以及作者、原文标题、发表日期和原文 HTTPS 链接。壁纸和网页明确标注意译与自拟例子；不冒充作者逐字引语。只标月份的原文保留月份，不捏造具体日期。作者的判断不是普遍定律。
 
-1. **URL**：输入固定图片地址，并追加 `?day=` 和「当前日期」格式化为 `yyyy-MM-dd`，避免缓存旧图。也可直接用固定图片地址测试。
-2. **获取 URL 内容**（Get Contents of URL）：GET。
-3. **设定墙纸照片**（Set Wallpaper Photo）：图片使用上一步结果，目标选择锁定屏幕，关闭显示预览（如果系统提供此选项）。
-4. 手动运行一次并授权。
-5. 「自动化」→「特定时间」→ **每天 00:20** →「立即运行」→选择该快捷指令。
+这是有限精选库，**不是每天无限自动 AI 创作**。不需要 API key，不产生 AI API 费用。添加动态 AI 必须另行配置密钥并评估费用及来源核验。
 
-重要：GitHub Actions 定时可能延迟；00:20 不保证最新壁纸已发布。想确保不显示旧图，可先获取 `latest.json`，检查其中 `date` 是否等于手机当天日期，仅相同时才设置壁纸。不同 iOS 版本的快捷指令操作名称可能略有不同。
+## 日期去重
 
-## 编辑词汇
+从 2026-10-29 起，按固定顺序每日选一条，32 天内 ID 不重复，第 33 天开始循环。重跑同一日期会生成同一条内容与配色。`latest.json` 标明内容 ID、日期、库容量、循环轮次、来源与图片 SHA-256。公开 `date-index.json` 提供第一轮日期索引。
 
-修改 `data/words.json`，每条包括英语和塞语单词、释义和例句。词库目前 30 组，超过 30 天会循环，需要定期扩充。例句宜短，避免挤占安全区域。
+扩库时应维护旧顺序；改变库长度会改变之后循环的对应关系。若要永久保存多轮历史，应先改成持久的日期分配表。当前日期图片仅保留本次部署当天，仓库不累计每日图片历史。
 
-## 运行时间
+## 视觉
 
-工作流分别在 UTC 22:05 和 23:05 触发，通过 `Europe/Belgrade` 当地小时判断，只在当地 00 点运行。手动触发随时运行。GitHub 定时任务可能延迟，极端情况下会跳过当天。
+1290 × 2796，暖象牙白、森林绿、勃艮第红、石墨灰、薰衣草紫、摩卡、灰玫瑰、石板蓝八色按日期轮换。顶部 40%、底部 15% 保持纯背景。正文 40–44 px，标题 60 px；来源 27–28 px。过长内容直接报错，避免缩成难读的小字。测试覆盖全部 32 条 × 8 配色，并检查真实像素安全区与水平边界。
 
-## 本地预览
+## 自动发布
 
-```bash
-pip install -r requirements.txt
-python -m unittest
-python generate.py 2026-10-17
-```
+Pages → Source 使用 **GitHub Actions**。工作流 `.github/workflows/daily-wallpaper.yml` 上传 `public/`，所以根路径始终为 `latest.png`，网页为 `/`，元数据为 `latest.json`。
 
-Linux 环境需要安装 `fonts-noto-cjk` 和 `fonts-dejavu-core`。其他系统可通过 `FONT_LATIN`、`FONT_CJK` 环境变量指定本机字体路径。字体文件不包含在项目内。
+每日 UTC 22:17、23:17、03:17 运行；按原有 `Europe/Belgrade` 日历取当天内容（与华沙当前规则相同）。双午夜触发兼容夏令时，03:17 为补跑；不再因延迟跨出零点时段而跳过。代码/内容变更及手动 `Run workflow` 也触发。补跑可能重复发布同一天，但不会抽到另一条。
 
-## 费用及隐私
+GitHub 定时可能延迟或漏跑，公开仓库的定时任务也可能在长期无活动后被 GitHub 停用，不能保证手机 00:20 下载时当天图片已发布。原 Shortcut 不变；CDN/iPhone 缓存仍可能短暂保留旧图。原有带日期查询参数的 URL 可继续使用。
 
-公开仓库与 GitHub Pages 的基础使用通常免费；图片及代码公开可见，不应加入私人资料。无需 AI API key。生成是词库驱动，并非每天由 ChatGPT 实时创作新词。
+工作流依次执行：全库测试 → 生成 → Pages 部署 → 从公开站点读取 JSON 与 PNG，核对日期、ID 和实际图片 SHA-256；最多重试 12 次。公开校验失败会使工作流失败，即使部署步骤已成功。单凭绿色部署步骤不能证明手机已换壁纸。
+
+## 本地验证
+
+Python 3.12；`pip install -r requirements.txt`，Ubuntu 安装 `fonts-noto-cjk fonts-dejavu-core`，执行 `python -m unittest`、`python generate.py 2026-10-29`。其他系统可用 `FONT_LATIN`、`FONT_CJK` 指定字体。`python verify_public.py` 比较当前本地产物与公开站点；本地字体不同会产生不同哈希，应使用 Actions 的相同字体比较。
+
+所有内容与生成结果公开可见。纯库驱动的每日生成无需外部内容接口；来源网站暂时不可用也不影响生成。来源应定期人工复核。
